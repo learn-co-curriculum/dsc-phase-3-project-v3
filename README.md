@@ -42,7 +42,7 @@ It is up to you to decide what data from this dataset to use and how to use it. 
 
 * **You should demonstrate an iterative approach to modeling.** This means that you must build multiple models. Begin with a basic model, evaluate it, and then provide justification for and proceed to a new model. After you finish refining your models, you should provide 1-3 paragraphs in the notebook discussing your final model.
 
-* **Data visualization and analysis are still very important.** In Phase 1, your project stopped earlier in the CRISP-DM process. Now you are going a step further, to modeling. Data visualization and analysis will help you build better models and tell a better story to your stakeholders.
+* **Data visualization and analysis are still very important.** In Phase 2, your project stopped earlier in the CRISP-DM process. Now you are going a step further, to modeling. Data visualization and analysis will help you build better models and tell a better story to your stakeholders.
 
 ## Deliverables
 
@@ -103,7 +103,7 @@ For this project, the `README.md` file should contain:
 * **Regression Results**
 * Conclusion
 
-Just like in Phase 1, the `README.md` file should be the bridge between your non technical presentation and the Jupyter Notebook. It should not contain the code used to develop your analysis, but should provide a more in-depth explanation of your methodology and analysis than what is described in your presentation slides.
+Just like in Phase 2, the `README.md` file should be the bridge between your non technical presentation and the Jupyter Notebook. It should not contain the code used to develop your analysis, but should provide a more in-depth explanation of your methodology and analysis than what is described in your presentation slides.
 
 ## Grading
 
@@ -116,9 +116,9 @@ Just like in Phase 1, the `README.md` file should be the bridge between your non
 
 ### Attention to Detail
 
-Just like in Phase 1, this rubric objective is based on your completion of checklist items. ***In Phase 3, you need to complete 70% (7 out of 10) or more of the checklist elements in order to pass the Attention to Detail objective.***
+Just like in Phase 2, this rubric objective is based on your completion of checklist items. ***In Phase 3, you need to complete 70% (7 out of 10) or more of the checklist elements in order to pass the Attention to Detail objective.***
 
-**NOTE THAT THE PASSING BAR IS HIGHER IN PHASE 2 THAN IT WAS IN PHASE 1!**
+**NOTE THAT THE PASSING BAR IS HIGHER IN PHASE 3 THAN IT WAS IN PHASE 2!**
 
 The standard will increase with each Phase, until you will be required to complete all elements to pass Phase 5 (Capstone).
 
@@ -144,7 +144,7 @@ Recall that communication is one of the key data science "soft skills". In Phase
 
 > Communicating **results of statistical analyses** to diverse audiences via writing and live presentation
 
-Note that this is the same as in Phase 1, except we are replacing "basic data analysis" with "statistical analyses".
+Note that this is the same as in Phase 2, except we are replacing "basic data analysis" with "statistical analyses".
 
 High-quality Statistical Communication includes rationale, results, limitations, and recommendations:
 
@@ -273,9 +273,9 @@ Here are some suggestions for creating your GitHub repository:
 
 1. Fork the [Phase 3 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-3-project-v3), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
 2. Or, create a new repository from scratch by going to [github.com/new](https://github.com/new) and copying the data files from the Phase 3 Project Repository into your new repository.
-   - Recall that you can refer to the [Phase 1 Project Template](https://github.com/learn-co-curriculum/dsc-project-template) as an example structure
+   - Recall that you can refer to the [Project Template](https://github.com/learn-co-curriculum/dsc-project-template) as an example structure
    - This option will result in the most professional-looking portfolio repository, but can be more complicated to use. So if you are getting stuck with this option, try forking the project repository instead
 
 ## Summary
 
-This is your first modeling project! Take what you have learned in Phase 2 to create a project with a more sophisticated analysis than you completed in Phase 1. You will build on these skills as we move into the predictive machine learning mindset in Phase 3. You've got this!
+This is your first modeling project! Take what you have learned in Phase 3 to create a project with a more sophisticated analysis than you completed in Phase 2. You will build on these skills as we move into the predictive machine learning mindset in Phase 4. You've got this!
