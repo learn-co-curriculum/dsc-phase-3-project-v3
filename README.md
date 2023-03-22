@@ -109,34 +109,9 @@ Just like in Phase 2, the `README.md` file should be the bridge between your non
 
 ***To pass this project, you must pass each project rubric objective.*** The project rubric objectives for Phase 3 are:
 
-1. Attention to Detail
-2. Statistical Communication
-3. Data Preparation Fundamentals
-4. Linear Modeling
-
-### Attention to Detail
-
-Just like in Phase 2, this rubric objective is based on your completion of checklist items. ***In Phase 3, you need to complete 70% (7 out of 10) or more of the checklist elements in order to pass the Attention to Detail objective.***
-
-**NOTE THAT THE PASSING BAR IS HIGHER IN PHASE 3 THAN IT WAS IN PHASE 2!**
-
-The standard will increase with each Phase, until you will be required to complete all elements to pass Phase 5 (Capstone).
-
-#### Exceeds Objective
-
-80% or more of the project checklist items are complete
-
-#### Meets Objective (Passing Bar)
-
-70% of the project checklist items are complete
-
-#### Approaching Objective
-
-60% of the project checklist items are complete
-
-#### Does Not Meet Objective
-
-50% or fewer of the project checklist items are complete
+1. Statistical Communication
+2. Data Preparation Fundamentals
+3. Linear Modeling
 
 ### Statistical Communication
 
