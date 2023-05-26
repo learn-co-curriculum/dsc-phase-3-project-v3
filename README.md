@@ -1,48 +1,72 @@
+
 # Phase 3 Project Description
 
-Another module down - you're over half way there!
+Congratulations! You've made it through another _intense_ module, and now you're ready to show off your newfound Machine Learning skills
 
-All that remains in Phase 3 is to put your newfound data science skills to use with a large project!
+All that remains in Phase 3 is to put your new skills to use with another large project.
 
 In this project description, we will cover:
 
-* Project Overview: the project goal, audience, and dataset
-* Deliverables: the specific items you are required to produce for this project
-* Grading: how your project will be scored
-* Getting Started: guidance for how to begin working
+* Project Overview
+* Deliverables
+* Grading
+* Getting Started
 
 ## Project Overview
 
-For this project, you will use multiple linear regression modeling to analyze house sales in a northwestern county.
+For this project, you will engage in the full data science process from start to finish, solving a **classification** problem using a **dataset of your choice**.
 
-### Business Problem
+### Business Problem and Data
 
-It is up to you to define a stakeholder and business problem appropriate to this dataset.
+It is up to you to define a stakeholder, a business problem, and you are also responsible for choosing a dataset.
 
-If you are struggling to define a stakeholder, we recommend you complete a project for a real estate agency that helps homeowners buy and/or sell homes. A business problem you could focus on for this stakeholder is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
-
-### The Data
-
-This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this assignment's GitHub repository. The description of the column names can be found in `column_names.md` in the same folder. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions about what the data means.
-
-It is up to you to decide what data from this dataset to use and how to use it. **If you are feeling overwhelmed or behind**, we recommend you **ignore** some or all of the following features:
-
-* `date`
-* `view`
-* `sqft_above`
-* `sqft_basement`
-* `yr_renovated`
-* `address`
-* `lat`
-* `long`
+For complete details, see [Phase 3 Project - Choosing a Dataset](https://github.com/learn-co-curriculum/dsc-phase-3-choosing-a-dataset).
 
 ### Key Points
 
-* **Your goal in regression modeling is to yield findings to support relevant recommendations. Those findings should include a metric describing overall model performance as well as at least two regression model coefficients.** As you explore the data and refine your stakeholder and business problem definitions, make sure you are also thinking about how a linear regression model adds value to your analysis. "The assignment was to use linear regression" is not an acceptable answer! You can also use additional statistical techniques other than linear regression, so long as you clearly explain why you are using each technique.
+#### Classification
 
-* **You should demonstrate an iterative approach to modeling.** This means that you must build multiple models. Begin with a basic model, evaluate it, and then provide justification for and proceed to a new model. After you finish refining your models, you should provide 1-3 paragraphs in the notebook discussing your final model.
+Recall the distinction between *classification* and *regression* models:
 
-* **Data visualization and analysis are still very important.** In Phase 2, your project stopped earlier in the CRISP-DM process. Now you are going a step further, to modeling. Data visualization and analysis will help you build better models and tell a better story to your stakeholders.
+ * Classification is used when the target variable is a *category*
+ * Regression is used when the target variable is a *numeric value*
+
+(Categorical data may be represented in the data as numbers, e.g. 0 and 1, but they are not truly numeric values. If you're unsure, ask yourself "is a target value of 1 _one more than_ a target value of 0"; if it is one more, that is a regression target, if not, that is a classification target.)
+
+You will have additional opportunities to work on regression problems in later phases, but **for this project, you must be modeling a classification problem**.
+
+#### Findings and Recommendations
+
+In the previous two projects, the framing was primarily *descriptive* and *inferential*, meaning that you were trying to understand the distributions of variables and the relationship between them. For this project you can still use these techniques, but make sure you are also using a ***predictive*** approach.
+
+A predictive *finding* might include:
+
+* How well your model is able to predict the target
+* What features are most important to your model
+
+A predictive *recommendation* might include:
+
+* The contexts/situations where the predictions made by your model would and would not be useful for your stakeholder and business problem
+* Suggestions for how the business might modify certain input variables to achieve certain target results
+
+#### Iterative Approach to Modeling
+
+You should demonstrate an iterative approach to modeling. This means that you must build multiple models. Begin with a basic model, evaluate it, and then provide justification for and proceed to a new model. After you finish refining your models, you should provide 1-3 paragraphs in the notebook discussing your final model.
+
+With the additional techniques you have learned in Phase 3, be sure to explore:
+
+1. Model features and preprocessing approaches
+2. Different kinds of models (logistic regression, decision trees, etc.)
+3. Different model hyperparameters
+
+At minimum you must build two models:
+
+* A simple, interpretable baseline model (logistic regression or single decision tree)
+* A version of the simple model with tuned hyperparameters
+
+#### Classification Metrics
+
+**You must choose appropriate classification metrics and use them to evaluate your models.** Choosing the right classification metrics is a key data science skill, and should be informed by data exploration and the business problem itself. You must then use this metric to evaluate your model performance using both training and testing data.
 
 ## Deliverables
 
@@ -51,8 +75,6 @@ There are three deliverables for this project:
 * A **non-technical presentation**
 * A **Jupyter Notebook**
 * A **GitHub repository**
-
-The deliverables requirements are almost the same as in the Phase 2 Project, and you can review those extended descriptions [here](https://github.com/learn-co-curriculum/dsc-phase-2-project-v3#deliverables).
 
 ### Non-Technical Presentation
 
@@ -64,16 +86,16 @@ We recommend that you follow this structure, although the slide titles should be
     - Overview
     - Business and Data Understanding
 2. Middle
-    - **Modeling**
-    - **Regression Results**
+    - Modeling
+    - **Evaluation**
 3. End
     - Recommendations
     - Next Steps
     - Thank you
 
-Make sure that your discussion of modeling and regression results is geared towards a non-technical audience! Assume that their prior knowledge of regression modeling is minimal. You don't need to explain how linear regression works, but you should explain why linear regression is useful for the problem context. Make sure you translate any metrics or coefficients into their plain language implications.
+Make sure that your discussion of classification modeling is geared towards a non-technical audience! Assume that their prior knowledge of machine learning is minimal. You don't need to explain the details of your model implementations, but you should explain why classification is useful for the problem context. Make sure you translate any metrics or feature importances into their plain language implications.
 
-The graded elements for the non-technical presentation are the same as in [Phase 2](https://github.com/learn-co-curriculum/dsc-phase-2-project-v3#deliverables).
+The graded elements for the non-technical presentation are the same as in [Phase 1](https://github.com/learn-co-curriculum/dsc-phase-1-project-v3#deliverables) and [Phase 2]((https://github.com/learn-co-curriculum/dsc-phase-2-project-v3#deliverables)).
 
 ### Jupyter Notebook
 
@@ -84,173 +106,167 @@ The graded elements for the Jupyter Notebook are:
 * Business Understanding
 * Data Understanding
 * Data Preparation
-* **Modeling**
-* **Regression Results**
+* Modeling
+* **Evaluation**
 * Code Quality
 
 ### GitHub Repository
 
 Recall that the GitHub repository is the cloud-hosted directory containing all of your project files as well as their version history.
 
-The requirements are the same as in [Phase 2](https://github.com/learn-co-curriculum/dsc-phase-2-project-v3#github-repository), except for the required sections in the `README.md`.
+The requirements are the same as in [Phase 1](https://github.com/learn-co-curriculum/dsc-phase-1-project-v3#github-repository) and [Phase 2](https://github.com/learn-co-curriculum/dsc-phase-2-project-v3#github-repository), except for the required sections in the `README.md`.
 
 For this project, the `README.md` file should contain:
 
 * Overview
 * Business and Data Understanding
-  * Explain your stakeholder audience here
-* **Modeling**
-* **Regression Results**
+  * Explain your stakeholder audience and dataset choice here
+* Modeling
+* **Evaluation**
 * Conclusion
 
-Just like in Phase 2, the `README.md` file should be the bridge between your non technical presentation and the Jupyter Notebook. It should not contain the code used to develop your analysis, but should provide a more in-depth explanation of your methodology and analysis than what is described in your presentation slides.
+Just like in Phase 1 and 2, the `README.md` file should be the bridge between your non technical presentation and the Jupyter Notebook. It should not contain the code used to develop your analysis, but should provide a more in-depth explanation of your methodology and analysis than what is described in your presentation slides.
 
 ## Grading
 
 ***To pass this project, you must pass each project rubric objective.*** The project rubric objectives for Phase 3 are:
 
-1. Statistical Communication
-2. Data Preparation Fundamentals
-3. Linear Modeling
+1. ML Communication
+2. Data Preparation for Machine Learning
+3. Nonparametric and Ensemble Modeling
 
-### Statistical Communication
+### ML Communication
 
-Recall that communication is one of the key data science "soft skills". In Phase 3, we are specifically focused on Statistical Communication. We define Statistical Communication as:
+Recall that communication is one of the key data science "soft skills". In Phase 3, we are specifically focusing on ML Communication. We define ML Communication as:
 
-> Communicating **results of statistical analyses** to diverse audiences via writing and live presentation
+> Communicate the **performance** of and **insights** generated by machine learning models to diverse audiences via writing, live presentation, and visualization
 
-Note that this is the same as in Phase 2, except we are replacing "basic data analysis" with "statistical analyses".
+High-quality ML Communication includes rationale, results, limitations, and recommendations:
 
-High-quality Statistical Communication includes rationale, results, limitations, and recommendations:
-
-* **Rationale:** Explaining why you are using statistical analyses rather than basic data analysis
-  * For example, why are you using regression coefficients rather than just a graph?
+* **Rationale:** Explaining why you are using machine learning rather than a simpler form of data analysis
   * What about the problem or data is suitable for this form of analysis?
   * For a data science audience, this includes your reasoning for the changes you applied while iterating between models.
-* **Results:** Describing the overall model metrics and feature coefficients
-  * You need at least one overall model metric (e.g. r-squared or RMSE) and at least two feature coefficients.
-  * For a business audience, make sure you connect any metrics to real-world implications. You do not need to get into the details of how linear regression works.
+* **Results:** Describing the classification metrics
+  * You can report multiple metrics for a single model, but make sure that indicate a reason for which metrics you are using (and don't try to use all of them at once)
+  * For a business audience, make sure you connect any metrics to real-world implications. You do not need to get into the details of how the model works.
   * For a data science audience, you don't need to explain what a metric is, but make sure you explain why you chose that particular one.
 * **Limitations:** Identifying the limitations and/or uncertainty present in your analysis
-  * This could include p-values/alpha values, confidence intervals, assumptions of linear regression, missing data, etc.
+  * Are there certain kinds of records where model performance is worse? If you used this model in production, what kinds of problems might that cause?
   * In general, this should be more in-depth for a data science audience and more surface-level for a business audience.
 * **Recommendations:** Interpreting the model results and limitations in the context of the business problem
   * What should stakeholders _do_ with this information?
 
 #### Exceeds Objective
 
-Communicates the rationale, results, limitations, and specific recommendations of statistical analyses
+Communicates the rationale, results, limitations, and specific recommendations generated by a classification model
 
-> See above for extended explanations of these terms.
+> See above for an extended explanation of these terms.
 
 #### Meets Objective (Passing Bar)
 
-Successfully communicates the results of statistical analyses without any major errors
+Successfully communicates model metrics without any major errors
 
-> The minimum requirement is to communicate the _results_, meaning at least one overall model metric (e.g. r-squared or RMSE) as well as at least two feature coefficients. See the Approaching Objective section for an explanation of what a "major error" means.
+> The minimum requirement is to communicate the _results_, meaning at least one overall model metric for your final model. See the Approaching Objective section for an explanation of what a "major error" means.
 
 #### Approaching Objective
 
-Communicates the results of statistical analyses with at least one major error
+Communicates model metrics with at least one major error
 
-> A major error means that some aspect of your explanation is fundamentally incorrect. For example, if a feature coefficient is negative and you say that an increase in that feature results in an increase of the target, that would be a major error. Another example would be if you say that the feature with the highest coefficient is the "most statistically significant" while ignoring the p-value. One more example would be reporting a coefficient that is not statistically significant, rather than saying "no statistically significant linear relationship was found"
-
-> "**If a coefficient's t-statistic is not significant, don't interpret it at all.** You can't be sure that the value of the corresponding parameter in the underlying regression model isn't really zero." _DeVeaux, Velleman, and Bock (2012), Stats: Data and Models, 3rd edition, pg. 801_. Check out [this website](https://web.ma.utexas.edu/users/mks/statmistakes/TOC.html) for extensive additional examples of mistakes using statistics.
-
-> The easiest way to avoid making a major error is to have someone double-check your work. Reach out to peers on Slack and ask them to confirm whether your interpretation makes sense!
+> A major error means that some aspect of your explanation is fundamentally incorrect. For example, if you report a regression metric for a classification model, that would be a major error. Another example would be if you report the model's performance on the training data, rather than the model's performance on the test data.
 
 #### Does Not Meet Objective
 
-Does not communicate the results of statistical analyses
+Does not communicate model metrics
 
-> It is not sufficient to just display the entire results summary. You need to pull out at least one overall model metric (e.g. r-squared, RMSE) and at least two feature coefficients, and explain what those numbers mean.
+> It is not sufficient just to display the `classification_report` or confusion matrix for a given model. You need to focus on one or more specific metrics that are important for your business case.
 
-### Data Preparation Fundamentals
+### Data Preparation for Machine Learning
 
 We define this objective as:
 
-> Applying appropriate **preprocessing** and feature engineering steps to tabular data in preparation for statistical modeling
+> Applying appropriate preprocessing and feature engineering steps to tabular data in preparation for predictive modeling
 
-The two most important components of preprocessing for the Phase 3 project are:
+You still to ensure that you have a strategy for dealing with missing and non-numeric data.
 
-* **Handling Missing Values:** Missing values may be present in the features you want to use, either encoded as `NaN` or as some other value such as `"?"`. Before you can build a linear regression model, make sure you identify and address any missing values using techniques such as dropping or replacing data.
-* **Handling Non-Numeric Data:** A linear regression model needs all of the features to be numeric, not categorical. For this project, ***be sure to pick at least one non-numeric feature and try including it in a model.*** You can identify that a feature is currently non-numeric if the type is `object` when you run `.info()` on your dataframe. Once you have identified the non-numeric features, address them using techniques such as ordinal or one-hot (dummy) encoding.
+For the Phase 3 project, make sure you also consider:
 
-There is no single correct way to handle either of these situations! Use your best judgement to decide what to do, and be sure to explain your rationale in the Markdown of your notebook.
+* **Preventing Data Leakage:** As you prepare data for modeling, make sure that you are correctly applying data preparation techniques so that your model's performance on test data realistically represents how it would perform on unseen data. For scikit-learn transformers specifically, ***make sure that you do not fit the transformer on the test data***. Instead, fit the transformer on the training data and use it to transform both the train and test data.
+* **Scaling:** If you are using a distance-based model algorithm (e.g. kNN or logistic regression with regularization), make sure you scale your data prior to fitting the model.
 
 Feature engineering is encouraged but not required for this project.
 
 #### Exceeds Objective
 
-Goes above and beyond with data preparation, such as feature engineering or merging in outside datasets
+Goes above and beyond with data preparation, such as feature engineering or using pipelines
 
-> One example of feature engineering could be using the `date` feature to create a new feature called `season`, which represents whether the home was sold in Spring, Summer, Fall, or Winter.
+> Relevant examples of feature engineering will depend on your choice of dataset and business problem.
 
-> One example of merging in outside datasets could be finding data based on ZIP Code, such as household income or walkability, and joining that data with the provided CSV.
+> Pipelines are the best-practice approach to data preparation that avoids leakage, but they can get complicated very quickly. We therefore do not recommend that you use pipelines in your initial modeling approach, but rather that you refactor to use pipelines if you have time.
 
 #### Meets Objective (Passing Bar)
 
-Successfully prepares data for modeling, including converting at least one non-numeric feature into ordinal or binary data and handling missing data as needed
+Successfully prepares data for modeling, using a final holdout dataset that is transformed by (but not fitted on) transformers used to prepare training data AND scaling data when appropriate
 
-> As a reminder, you can identify the non-numeric features by calling `.info()` on the dataframe and looking for type `object`.
-
-> Your final model does not necessarily need to include any features that were originally non-numeric, but you need to demonstrate your ability to handle this type of data.
+> See the descriptions above for explanations of how to use transformers and scaling.
 
 #### Approaching Objective
 
-Prepares some data successfully, but is unable to utilize non-numeric data
+Prepares some data successfully, but has at least one major error
 
-> If you simply subset the dataframe to only columns with type `int64` or `float64`, your model will run, but you will not pass this objective.
+> A major error means that some aspect of your data preparation is fundamentally incorrect. Some examples of major errors include: (1) fitting transformers on test data, (2) not performing a train-test split, (3) not scaling data that is used in a distance-based model.
 
 #### Does Not Meet Objective
 
 Does not prepare data for modeling
 
-### Linear Modeling
+> This includes projects where data is partially prepared, but the model is unable to run.
 
-According to [Kaggle's 2020 State of Data Science and Machine Learning Survey](https://www.kaggle.com/kaggle-survey-2020), linear and logistic regression are the most popular machine learning algorithms, used by 83.7% of data scientists. They are small, fast models compared to some of the models you will learn later, but have limitations in the kinds of relationships they are able to learn.
+### Nonparametric and Ensemble Modeling
 
-In this project you are required to use linear regression as the primary statistical analysis, although you are free to use additional statistical techniques as appropriate.
+Your project should consider the different types of models that have been covered in the course so far and whether they are appropriate or inappropriate for the dataset and business case you are working with.
+
+Your final model can still be a linear model (e.g. logistic regression) but you should explore at least one nonparametric model (e.g. decision tree) as well and articulate why one or the other is a better approach.
 
 #### Exceeds Objective
 
-Goes above and beyond in the modeling process, such as recursive feature selection
+Goes above and beyond in the modeling process, such as articulating why a given model type is best suited to the problem or correctly using scikit-learn models not covered in the curriculum
+
+> Another way you might go above and beyond would be to create custom Python classes, possibly inheriting from scikit-learn classes.
 
 #### Meets Objective (Passing Bar)
 
-Successfully builds a baseline model as well as at least one iterated model, and correctly extracts insights from a final model without any major errors
+Uses at least two types of scikit-learn model and tunes at least one hyperparameter in a justifiable way without any major errors
 
-> We are looking for you to (1) create a baseline model, (2) iterate on that model, making adjustments that are supported by regression theory or by descriptive analysis of the data, and (3) select a final model and report on its metrics and coefficients
+> See the "Iterative Approach to Modeling" section above for a more-lengthy explanation.
 
-> Ideally you would include written justifications for each model iteration, but at minimum the iterations must be _justifiable_
+> Once again, ideally you would include written justifications for each model iteration, but at minimum the iterations must be _justifiable_.
 
-> For an explanation of "major errors", see the description below
+> For an explanation of "major errors", see the description under "Approaching Objective".
 
 #### Approaching Objective
 
-Builds multiple models with at least one major error
+Builds multiple classification models with at least one major error
 
-> The number one major error to avoid is including the target as one of your features. For example, if the target is `price` you should NOT make a "price per square foot" feature, because that feature would not be available if you didn't already know the price.
+> A major error means that some aspect of your modeling approach is fundamentally incorrect.
 
-> Other examples of major errors include: using a target other than `price`, attempting only simple linear regression (not multiple linear regression), dropping multiple one-hot encoded columns without explaining the resulting baseline, or using a unique identifier (`id` in this dataset) as a feature.
+> Once again, the number one major error to avoid is including the target as one of your features. If you are getting metrics that are "too good to be true", make sure that you removed the target (`y`) from your data before fitting the model.
+
+> Other examples of major errors include: using a numeric target value (since this is a classification project), not starting with a baseline model (e.g. proceeding directly to a Random Forest model), or not tuning hyperparameters in a justifiable way (e.g. reducing regularization on a model that is overfitting)
 
 #### Does Not Meet Objective
 
-Does not build multiple linear regression models
+Does not build multiple classification models
 
 ## Getting Started
 
 Please start by reviewing the contents of this project description. If you have any questions, please ask your instructor ASAP.
 
-Next, you will need to complete the [***Project Proposal***](#project_proposal) which must be reviewed by your instructor before you can continue with the project.
+Once you are ready to begin the project, you will need to complete the Project Proposal.
 
-Here are some suggestions for creating your GitHub repository:
+Recall that more information is available in [Phase 3 Project - Choosing a Dataset](https://github.com/learn-co-curriculum/dsc-phase-3-choosing-a-dataset).
 
-1. Fork the [Phase 3 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-3-project-v3), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
-2. Or, create a new repository from scratch by going to [github.com/new](https://github.com/new) and copying the data files from the Phase 3 Project Repository into your new repository.
-   - Recall that you can refer to the [Project Template](https://github.com/learn-co-curriculum/dsc-project-template) as an example structure
-   - This option will result in the most professional-looking portfolio repository, but can be more complicated to use. So if you are getting stuck with this option, try forking the project repository instead
+To get started with project development, create a new repository on GitHub. For this project, we recommend that you do not fork the template repository, but rather that you make a new repository from scratch, starting by going to [github.com/new](https://github.com/new).
 
 ## Summary
 
-This is your first modeling project! Take what you have learned in Phase 3 to create a project with a more sophisticated analysis than you completed in Phase 2. You will build on these skills as we move into the predictive machine learning mindset in Phase 4. You've got this!
+This project is an opportunity to expand your data science toolkit by evaluating, choosing, and working with new datasets. Spending time up front making sure you have a good dataset for a solvable problem will help avoid the major problems that can sometimes derail data science projects. You've got this!
